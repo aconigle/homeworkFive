@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 export class DataProvider {
     lists: any = [
         {
-            listheader: "Grocery List",
+            headerName: "Grocery List",
             Items: [
                 {
                     item: "milk",

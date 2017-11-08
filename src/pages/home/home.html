@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Grocery Shopping
+        Grocery Shopping List App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list *ngFor="let list of lists">
-    <ion-list-header>{{list.listheader}}</ion-list-header>
+      <ion-list-header>{{list.headerName}}</ion-list-header>
     <button ion-item *ngFor="let item of list.Items" (click)="itemClicked(item)">{{item.item}}</button>
   </ion-list>
 </ion-content>
